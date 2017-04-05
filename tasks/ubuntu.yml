@@ -4,7 +4,7 @@
   register: nginx_list
 
 - name: Add repo key
-  get_url: url=https://nginx.org/keys/nginx_signing.key dest=/etc/apt/nginx.key sha256sum=dcc2ed613d67b277a7e7c87b12907485652286e199c1061fb4b3af91f201be39 force=yes
+  get_url: url=https://nginx.org/keys/nginx_signing.key dest=/etc/apt/nginx.key sha256sum=dd4da5dc599ef9e7a7ac20a87275024b4923a917a306ab5d53fa77871220ecda force=yes
 
 - name: Add repo key
   file: path=/etc/apt/nginx.key owner=root group=root mode=0644
